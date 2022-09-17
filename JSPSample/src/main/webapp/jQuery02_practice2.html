@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<!-- CDN제공 online 처리 방식: 선언 script와 사용 script를 분리해야 한다. -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+/*
+	자식요소 필터 선택자:
+	내용 필터 선택자:
+	1)first-child
+	2)last-child
+	3)nth-child(n): n번째 위치한 자손을 갖고 있는 문서를 선택 (인덱스가 아닌 1부터 시작)
+	4)contains: 특정 문자열을 포함하는 문서 객체를 선택
+	5)empty: 문서의 내용이 존재하는가?
+	6)eq(n): n번째 위치한 문서 객체를 반환해 준다.
+	7)gt(n): n번째 위치를 넘어선 문서 객체를 반환해 준다.
+	8)lt(n): n번째 미만에 위치한 문서 객체를 반환해 준다.
+	9)has(tag): tag에 따라서 가지고 있는 문서 객체를 선택
+	10)not(selector): 선택자와 일치하지 않는 문서 객체를 선택
+*/
+
+
+	
+	$(document).ready(function(){ 
+		
+		alert('안녕하세요?');
+		
+		var text = $('img').attr('alt');
+		alert(text);
+		
+		$('img').attr({
+			
+			width: 400,
+			height: function(index){
+				return (index+1)*20;
+			}
+			
+		});
+	});
+
+</script>
+<body>
+<div>
+	<img src="./images/background1.jpg" alt="배경화면"/>
+	<img src="./images/background1.jpg" alt="배경화면"/>
+	<img src="./images/background1.jpg" alt="배경화면"/>
+	<img src="./images/background1.jpg" alt="배경화면"/>
+	<img src="./images/background1.jpg" alt="배경화면"/>
+	<img src="./images/background1.jpg" alt="배경화면"/>
+</div>
+
+	
+
+</body>
+</html>

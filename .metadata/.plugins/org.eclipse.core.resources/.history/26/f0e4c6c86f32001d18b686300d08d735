@@ -1,0 +1,51 @@
+package Beans;
+
+import java.util.Vector;
+
+// Data Access Object
+public class customerDAO {
+
+	private String name;// 클래스변수 
+	private int age;// 클래스변수 
+	
+	//customerVO 객체를 저장하기 위하여 vector객체를 선언
+	private Vector vector;//vector Object(= 참조 변수 = 포인터)
+	
+	
+	//생성자 메소드를 이용하여 vector객체를 생성
+	public customerDAO() {
+		vector = new Vector<>();
+		
+	}	
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
+	public void setAge(int age) {
+		this.age = age;
+		
+	}
+	
+	public customerVO[] getCustomer() {
+		
+		vector.addElement(new customerVO(name, age));
+		
+		int size = vector.size();
+		
+		customerVO[] c = new customerVO[size];
+		
+		for(int i=0; i < size; i++) {
+			c[i] = (customerVO) vector.elementAt(i);
+		}
+		return c;
+	}
+	
+	//고개정보 삭제
+	public void setDelete(int cust_index){
+		vector.removeElementAt(cust_index - 1); 
+		
+	}
+	
+}

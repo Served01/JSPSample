@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script>
+
+var owner = "황기태";
+var code = "111";
+var balance = 35000;
+
+function deposit(){
+	while(true){var inowner = prompt("소유자를 입력하시오.", "");
+	var incode = prompt("코드를 입력하시오", "");
+	if(inowner=="황기태" && incode=="111"){
+	var input = prompt("저축할 금액을 입력하시오.", "10000");
+	input = parseInt(input);
+	var balance1 = balance + input;
+	document.write("잔금이 "+ balance1+"만큼 남았습니다.");
+	balance = balance1;
+	break;
+	} else {
+		alert("소유자와 코드가 일치하지 않습니다.")
+		continue;
+	}}
+}
+
+function withdraw(){
+	while(true){var inowner = prompt("소유자를 입력하시오.", "");
+	var incode = prompt("코드를 입력하시오", "");
+	if(inowner=="황기태" && incode=="111"){
+	var input = prompt("인출할 금액을 입력하시오.", "10000");
+	input = parseInt(input);
+	var balance1 = balance - input;
+	document.write("잔금이 "+ balance1+"만큼 남았습니다.");
+	balance = balance1;
+	break;
+	} else {
+		alert("소유자와 코드가 일치하지 않습니다.")
+		continue;
+	}}
+}
+
+
+function inquiry(){
+	while(true){var inowner = prompt("소유자를 입력하시오.", "");
+	var incode = prompt("코드를 입력하시오", "");
+	if(inowner=="황기태" && incode=="111"){
+	var input = prompt("문의할 내용을 입력하시오.");
+	document.write("문의사항이 접수되었습니다.");
+	break;
+	} else {
+		alert("소유자와 코드가 일치하지 않습니다.")
+		continue;
+	}}
+}
+
+</script>
+</head>
+<body>
+<h3>객체</h3>
+<hr>
+
+<Input type="button" value="입금" onclick = "deposit()">
+<Input type="button" value="인출" onclick = "withdraw()">
+<Input type="button" value="문의" onclick = "inquiry()">
+
+
+</body>
+</html>

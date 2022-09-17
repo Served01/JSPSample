@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이름과 점수 입력 - Sample7_Score</title>
+</head>
+<body>
+<h2>JavaBeans를 이용한 학생의 점수에 따른 성적 처리 예제</h2>
+<% request.setCharacterEncoding("UTF-8");
+String name = request.getParameter("name");
+String point = request.getParameter("point");
+%>
+<HR>
+<h3>폼에서 전달받은 이름과 성적을 Beans GradeBean에 저장</h3><p>
+이름: <%=name%>,
+성적: <%=point%>
+<jsp:useBean id="score" class="Beans.GradeBean" scope="page" />
+<!-- 여기서 id는 object를 의미한다. Java에서는 이걸 GradeBean score = new GradeBean(); 으로 쓴다. -->
+<!-- 지금의 값들은 db가 아니라 메모리에 저장되는 것이다. -->
+     <jsp:setProperty name="score" property="name" param="name" />
+     <jsp:setProperty name="score" property="point" param="point" /></p>
+<HR>
+<h3>Beans GradeBean에 저장된 정보를 조회 출력</h3><p>
+이름: <jsp:getProperty name="score" property="name"/><br>
+성적: <jsp:getProperty name="score" property="point"/><br>
+등급: <jsp:getProperty name="score" property="grade"/><br></p>
+</body>
+</html>

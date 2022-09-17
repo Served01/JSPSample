@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>고객정보</title>
+</head>
+<body>
+
+<h3>***** 고객정보 입력하기 *****</h3>
+<form method="post" action="memberinfo.jsp">
+이름 <input type="text" name="name" >
+나이 <input type="text" name="age" >
+<input type="submit" value="고객등록">
+</form>
+
+<h3>***** 고객정보 삭제하기 *****</h3>
+<form method="post" action="memberinfo2.jsp">
+번호 <input type="text" name="number" >
+<input type="submit" value="고객삭제">
+</form>
+
+<h3>***** 고객정보 출력하기 *****</h3>
+
+<table  border="1">
+
+
+<tr> 
+<td>번호</td> 
+<td>이름</td>
+<td>나이</td>
+</tr> 
+
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/age.css">
+</head>
+<body>
+<button class ="btn" onclick="gugu()">구구단</button>
+
+<script>
+
+function gugu(){
+	document.write("구구단" + "<br><br>");
+	for(var i = 2; i<=9; i++){
+	document.write("<div style = 'float : left;'>");
+	document.write("<table border=1>");
+    document.write("<tbody>");
+    document.write("<thead font-style=bold font-size=20 align=center height ='80'>");
+    document.write("<td height ='30'>");
+	document.write(i+"단");
+	document.write("</td>");
+	document.write("</thead>");
+	for(var j=1; j<=9; j++){
+		mul = i * j;
+	document.write("<tr height ='30'>");
+	document.write("<td>");
+	document.write(i + " X " + j + " = " + mul);
+	document.write("</td>");
+	document.write("</tr>");
+	}
+	document.write("</tbody>")
+	document.write("</table>")
+	document.write("</div>");
+	document.write("&nbsp;");
+	}
+}
+</script>
+
+
+</body>
+</html>
