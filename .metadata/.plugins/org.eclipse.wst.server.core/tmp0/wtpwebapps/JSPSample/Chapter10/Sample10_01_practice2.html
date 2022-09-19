@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>윈도우를 넓이가 200이고 높이가 80인 새로운 윈도우를 생성하여 띄우고,
+띄워진 새로운 윈도우에 내용을 "접속했습니다."로 표시하여 출력하세요. 원래 윈도우에는
+HTML5, CSS3, JavaScript 등을 배웁니다. 라는 문구를 출력해 주세요.</title>
+<script>
+function load1(){
+	var newwin = window.open("","","left=300, top=400,width=200, height=80");
+	
+	newwin.document.write("접속에 감사합니다.!!!<br>");
+	newwin.document.body.style.backgroundColor = "yellow";
+	newwin.document.close();
+	
+}
+</script>
+</head>
+<body onload="load1()">
+<h3>Browser 객체중 window 객체 사용법</h3>
+<hr>
+HTML5, CSS3, JavaScript 등을 배웁니다.
+<br>
+</body>
+</html>

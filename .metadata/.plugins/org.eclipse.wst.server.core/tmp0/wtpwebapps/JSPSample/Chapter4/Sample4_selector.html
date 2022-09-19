@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>class 셀렉터 만들기</title>
+<style>
+    .warning {color: red;}
+    body.main {background: aliceblue;}
+    .main{color: yellow;}
+	h3:first-letter{
+	color: red;}
+	li:hover {
+	background: yellowgreen;}
+</style>
+</head>
+<body class="main">
+<h3>Web Programming</h3>
+<hr>
+<div>
+<div class="main">2 학기 <strong>학습 내용</strong ></div>
+	<ul><!-- div는 ul의 부모태그라고 볼수있고 스타일은 대부분 부모에게 적용됨 -->
+	<li>HTML5</li>
+	<li><strong>CSS</strong></li>
+	<li>JAVASCRIPT</li>
+	</ul>
+<div class="warning">60 점 이하는 F!</div>
+</div>
+</body>
+</html>

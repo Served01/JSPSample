@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<!-- CDN제공 online 처리 방식: 선언 script와 사용 script를 분리해야 한다. -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+/*
+입력양식 선택자: input: typevalue => #('input:text')
+input 태그의 상태에 따라서 선택자가 달라집니다.
+1)input:checked: 체크된 입력양식을 선택
+2)input:disabled: 비활성화된 입력양식을 선택
+3)input:enabled: 활성화된 입력양식을 선택
+4)input:focus: 초점이 맞추어져 있는 입력양식을 선택
+5)option:selected: option 객체 중에서 선택된 태그를 선택
+
+change(): 이벤트 처리, 입력 양식의 변화가 있을 때 사용
+html(): 문서객체의 텍스트 컨텐츠를 제어하는 메소드
+*/
+
+$(document).ready(function(){ 
+	
+	alert('안녕하세요?');
+	
+	$('select').change(function(){
+		var text =  $('option:selected').html();
+		alert(text);
+	});
+	
+	$('#check').change(function(){
+		$('#check:checked'.find('+ label'));
+	});
+	
+	$('input:disabled').css('background-color','red');
+	$('input:enabled').css('background-color','yellow');
+	
+});
+
+</script>
+<body>
+<div>
+	<select>
+		<option>자장면</option>
+		<option>돈가스</option>
+		<option>제육볶음</option>
+		<option>국밥</option>
+		<option>김치찌개</option>
+	</select>
+</div>
+<div>
+	<input type="checkbox" id="check"/>
+	<label for="check">아이디 저장하기</label><br>
+	<input type="text"/>
+	<input type="text" disabled="disabled"/>
+	
+
+</div>
+</body>
+</html>

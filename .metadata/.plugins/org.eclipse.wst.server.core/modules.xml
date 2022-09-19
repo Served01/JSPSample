@@ -4,6 +4,7 @@
   <module moduleId="org.eclipse.jst.jee.server:220812_JSPSample" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:customerOracleProject" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:customerMysqlProject" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:JSPSample" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:220812_JSPadvancedsample" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:220826_JSPadvancedsample" serverId="Tomcat v9.0 Server at localhost"/>
 </modules>

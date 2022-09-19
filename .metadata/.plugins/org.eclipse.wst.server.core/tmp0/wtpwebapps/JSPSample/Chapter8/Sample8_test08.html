@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/age.css">
+</head>
+<body>
+<script>
+function change() {
+var spanArray = document.getElementsByTagName("span");
+for(var i =0; i<spanArray.length; i++){
+var span = spanArray[i];
+span.style.color = "orchid";
+span.style.fontSize = "20px";
+ }
+}
+</script>
+</head>
+<body>
+<h3>라면 끓이는 순서<br>
+<button onclick="change()">누르세요</button>
+</h3>
+<hr>
+1. 물을 끓입니다.<br>
+2. <span>스프</span>와 <span>후레이크</span>를 끓는 물에 넣습니다.<br>
+3. 그 후에 <span>면</span>을 넣습니다.<br>
+4. <span>1분</span> 후 <span>계란</span>을 깨서 끓는 물에 넣습니다.<br>
+5. <span>3분</span> 정도 더 끓인 뒤 라면을 먹습니다.<br>
+
+<ol type="1">
+<li>물을 끓입니다.</li>
+<li><span>스프</span>와 <span>후레이크</span>를 끓는 물에 넣습니다.</li>
+<li>그 후에 <span>면</span>을 넣습니다.</li>
+<li><span>1분</span> 후 <span>계란</span>을 깨서 끓는 물에 넣습니다.</li>
+<li><span>3분</span> 정도 더 끓인 뒤 라면을 먹습니다.</li>
+</ol>
+</body>
+</html>

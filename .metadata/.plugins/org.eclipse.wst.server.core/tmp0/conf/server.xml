@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="E:\Googledrive전용폴더\컴퓨터공부\JSPworkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="E:\Googledrive전용폴더\컴퓨터공부\JSPworkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\customerOracleProject" path="/customerMysqlProject" reloadable="true" source="org.eclipse.jst.jee.server:customerOracleProject"/></Host>
+      <Context docBase="D:\학생방\Github\JSPSample\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\학생방\Github\JSPSample\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\customerOracleProject" path="/customerMysqlProject" reloadable="true" source="org.eclipse.jst.jee.server:customerOracleProject"/><Context docBase="D:\학생방\Github\JSPSample\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JSPSample" path="/JSPSample" reloadable="true" source="org.eclipse.jst.jee.server:JSPSample"/></Host>
     </Engine>
   </Service>
 </Server>

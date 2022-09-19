@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>버튼을 클릭하면 one, two, three가 출력되도록 작성</title>
+</head>
+<script>
+	
+	function init() { // 문서가 완전히 로드되었을 때 호출
+		var button = document.getElementById("button");
+	
+		button.addEventListener("click", function(){			
+			alert("one");
+		});
+		button.addEventListener("click", function(){			
+			alert("two");
+		})
+		button.addEventListener("click", function(){
+			alert("three");
+		});
+	}
+	
+</script>
+
+<body onload="init()">
+	<h3>이벤트 번호</h3>
+	<hr>
+	<p id="button">버튼</p>
+</body>
+
+</html>

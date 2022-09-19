@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>BOM-browser object model</title> 
+
+<script type="text/javascript"> 
+
+/* 브라우저를 처음 실행할 때 나오는 첫 페이지의 사이트(네이버)를 새창으로
+ * 300x300 으로 띄우고 3초 뒤에 700x700으로 변경하시오.
+ */
+ 
+ window.open("http://www.naver.com",'','left=100, top=200, width=300,height=300');
+ 
+ setTimeout(function(){
+	 window.open("http://www.naver.com",'','left=200, top=300, width=700,height=700');
+ },3000)
+ 
+</script> 
+</head> 
+<body> 
+	
+</body>
+</html>

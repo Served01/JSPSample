@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/age.css">
+</head>
+<script>
+function change() {
+var spanArray = document.getElementsByTagName("span");
+for(var i =0; i<spanArray.length; i++){
+var li = spanArray[i];
+ var style = window.getComputedStyle(li);
+ var vh = style.getPropertyValue("visibility");
+ 
+ if(vh == "hidden")
+	 li.style.visibility = "visible";
+else
+	li.style.visibility = "hidden";
+ }
+}
+</script>
+<body>
+
+<details>
+<summary>라면 끓이는 순서</summary>
+<ol type="1">
+<li>물을 끓입니다.</li>
+<li><span>스프</span>와 <span>후레이크</span>를 끓는 물에 넣습니다.</li>
+<li>그 후에 <span>면</span>을 넣습니다.</li>
+<li><span>1분</span> 후 <span>계란</span>을 깨서 끓는 물에 넣습니다.</li>
+<li><span>3분</span> 정도 더 끓인 뒤 라면을 먹습니다.</li>
+</ol>
+</details>
+
+
+</body>
+</html>

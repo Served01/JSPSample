@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>08-15</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            // each()는 앞의 요소가 jQuery 객체이어야 실행된다
+            $('#content div').each(function(i, elem){
+                $(elem).wrap('<b>');
+            });
+
+            // 앞이 JavaScript 객체. 에러
+            // [10,20,30].each(function(i, elem){
+            //     console.log(elem);
+            // })
+
+            $([10,20,30]).each(function(i, elem){
+                console.log(elem);
+            });
+
+            // $.each(반복객체, function(i, elem){...})
+            // JavaScript, jQuery 모두 가능
+            $.each([10,20,30], function(i, elem){
+                console.log(elem);
+            })
+
+            var one = $('#one div').css('color', 'orange')
+            $.each(one, function(i, elem){
+                $(elem).wrap("<b>")
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div class="card-body" id="content">
+        <div id="a">김수한무</div>
+        <div>거북이와 두루미</div>
+        <div class="test">삼천갑자 동방삭</div>
+    </div>
+
+    <div class="card-body" id="one">
+        <div id="a">김수한무</div>
+        <div>거북이와 두루미</div>
+        <div class="test">삼천갑자 동방삭</div>
+    </div>
+</body>
+
+</html>

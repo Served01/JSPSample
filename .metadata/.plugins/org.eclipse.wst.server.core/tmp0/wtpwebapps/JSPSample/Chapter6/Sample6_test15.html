@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<body>
+
+<script>
+var price;
+var fruits = prompt("과일 이름을 입력하시오.", "바나나");
+var input = prompt("과일을 몇 개 살 것인지 입력하시오.", 100);
+var count = parseInt(input);
+
+switch(fruits) {
+
+case "바나나":
+price = 200; 
+price *= count; break;
+
+case "사과":
+price = 300; 
+price *= count; break;
+
+case "체리":
+price = 400; 
+price *= count; break;
+
+default:
+document.write("팔지 않습니다.");
+price = 0;
+}
+
+document.write("총 " + price);
+
+</script>
+</body>
+</html>

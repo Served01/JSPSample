@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<h3>12시 이전이면 오렌지색으로, 12시 이후에는 skyblue색으로 배경색을 표시하세요.</h3>
+<hr>
+<script>
+var current = new Date(); // 현재 시간을 가진 Date 객체 생성
+if(current.getHours() < 12)
+document.body.style.backgroundColor = "orange";
+else
+document.body.style.backgroundColor = "skyblue";
+document.write("현재 시간 : ");
+document.write(current.getHours(), "시");
+document.write(current.getMinutes(), "분");
+document.write(current.getSeconds(), "초<br>");
+</script>
+</body>
+</html>
