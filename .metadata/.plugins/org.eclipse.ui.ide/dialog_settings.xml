@@ -6,6 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="E:\Github_WS\JSPworkspace"/>
 			<item value="E:\Googledrive전용폴더\컴퓨터공부\Java기반 데이터반\addfile"/>
 			<item value="E:\Googledrive전용폴더\컴퓨터공부\Java기반 데이터반\addedfile"/>
 		</list>
